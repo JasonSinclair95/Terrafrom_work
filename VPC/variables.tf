@@ -10,5 +10,10 @@ variable "pub-sub-block1" {
 
 variable "enable_dns_hostnames" {
   description = "do you want to enable dns hostname"
-  default = true
+  default     = true
+}
+
+variable "internet_gateway" {
+  description = "name of internet gateway for VPC"
+  default     = "default value"
 }

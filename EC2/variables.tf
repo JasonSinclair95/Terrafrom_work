@@ -10,14 +10,19 @@ variable "type" {
 
 variable "public_subnet_id" {
   description = "id of public subnet"
-  default = "default value"
 }
 
 variable "vpc_security_group_ids" {
-  default = "default value"
+  description = "VPC Security Group IDs"
 }
 
 variable "key_name" {
   description = "public key for SSH"
-  default = "project_key"
+  default = "SSHKey"
+}
+
+variable "associate_public_ip_address" {
+  description = "Boolean value to determine Public IP Address"
+  type        = bool
+  default     = false
 }

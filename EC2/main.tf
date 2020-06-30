@@ -8,4 +8,6 @@ resource "aws_instance" "Terraform" {
   tags = {
     Name = "Terraform"
   }
+
+  associate_public_ip_address = var.associate_public_ip_address
 }
